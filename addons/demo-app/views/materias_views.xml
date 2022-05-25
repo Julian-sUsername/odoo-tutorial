@@ -1,0 +1,27 @@
+<odoo>
+    <record id="materias_view_tree" model="ir.ui.view">
+        <field name="name">materias.tree</field>
+        <field name="model">materias</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code" />
+                <field name="name" />
+                <field name="credits" />
+                <field name="note1" />
+                <field name="note2" />
+                <field name="note3" />
+                <field name="media" />
+                <field name="product"/>
+                <field name="sum_product" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="materias_action" model="ir.actions.act_window">
+        <field name="name">Materias</field>
+        <field name="res_model">materias</field>
+        <field name="view_mode">tree</field>
+        <!--<field name="context">{'search_default_available': 1}</field>-->
+    </record>
+
+</odoo>
